@@ -1,0 +1,11 @@
+.env
+.vscode
+artifacts
+cache
+coverage
+coverage.json
+deployments
+gasReport.txt
+node_modules
+typechain
+typechain-types
