@@ -7,20 +7,19 @@ import { HardhatUserConfig } from "hardhat/config"
 
 import "@nomicfoundation/hardhat-toolbox"
 
-import "@nomiclabs/hardhat-ethers"
 import "@nomiclabs/hardhat-etherscan"
 import "@nomiclabs/hardhat-solhint"
 
 const FUJI_RPC_URL = process.env.FUJI_RPC_URL
 const PRIVATE_KEY = process.env.PRIVATE_KEY
 const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY
-const SNOWTRACE_API_KEY = process.env.SNOWTRACE_API_KEY || "Your etherscan API key"
+const SNOWTRACE_API_KEY = process.env.SNOWTRACE_API_KEY || "Your snowtrace API key"
 
 const config: HardhatUserConfig = {
     solidity: {
         compilers: [
             {
-                version: "0.8.19",
+                version: "0.8.7",
                 settings: {
                     optimizer: {
                         enabled: true,
